@@ -30,11 +30,14 @@ function load_keys() {
 function save_keys($keys) {
     $dir = dirname(KEYS_FILE);
 
-    // data directory nahi hai to create karo
     if (!is_dir($dir)) {
         if (!mkdir($dir, 0775, true)) {
             return false;
         }
+    }
+
+    if (!is_writable($dir)) {
+        return false;
     }
 
     $json = json_encode(
@@ -45,6 +48,11 @@ function save_keys($keys) {
     if ($json === false) {
         return false;
     }
+
+    $result = file_put_contents(KEYS_FILE, $json, LOCK_EX);
+
+    return $result !== false;
+}
 
     return file_put_contents(KEYS_FILE, $json, LOCK_EX) !== false;
 }
