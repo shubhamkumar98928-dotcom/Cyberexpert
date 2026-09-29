@@ -4,7 +4,7 @@
 // Nexxon Exploits Edition
 // ------------------------------------------------------------
 
-define('DATA_DIR', '/tmp/nexxon_data');
+define('DATA_DIR', __DIR__ . '/data');
 define('KEYS_FILE', DATA_DIR . '/keys.json');
 define('ADMIN_PASSWORD', 'shubham@77');
 define('BACKEND_URL', 'https://nexxonexploitsvip.vercel.app/search');
