@@ -76,13 +76,22 @@ if ($action === 'api_create' && $_SERVER['REQUEST_METHOD'] === 'POST') {
         'created_at' => date('Y-m-d H:i:s') . ' UTC',
         'last_used' => null
     ];
-    
-    $keys[] = $new_key;
-    save_keys($keys);
-    
-    echo json_encode(['success' => true, 'key' => $new_key]);
+   $keys[] = $new_key;
+
+if (!save_keys($keys)) {
+    echo json_encode([
+        'success' => false,
+        'error' => 'Key save nahi ho rahi. data/keys.json writable nahi hai.'
+    ]);
     exit;
 }
+
+echo json_encode([
+    'success' => true,
+    'key' => $new_key
+]);
+exit; 
+    
 
 if ($action === 'api_update' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     header('Content-Type: application/json');
