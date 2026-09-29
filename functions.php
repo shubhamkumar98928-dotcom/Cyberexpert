@@ -28,7 +28,25 @@ function load_keys() {
 }
 
 function save_keys($keys) {
-    return @file_put_contents(KEYS_FILE, json_encode($keys, JSON_PRETTY_PRINT)) !== false;
+    $dir = dirname(KEYS_FILE);
+
+    // data directory nahi hai to create karo
+    if (!is_dir($dir)) {
+        if (!mkdir($dir, 0775, true)) {
+            return false;
+        }
+    }
+
+    $json = json_encode(
+        $keys,
+        JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES
+    );
+
+    if ($json === false) {
+        return false;
+    }
+
+    return file_put_contents(KEYS_FILE, $json, LOCK_EX) !== false;
 }
 
 function generate_key($prefix = 'NXX') {
