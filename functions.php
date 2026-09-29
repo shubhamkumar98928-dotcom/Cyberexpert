@@ -49,11 +49,6 @@ function save_keys($keys) {
         return false;
     }
 
-    $result = file_put_contents(KEYS_FILE, $json, LOCK_EX);
-
-    return $result !== false;
-}
-
     return file_put_contents(KEYS_FILE, $json, LOCK_EX) !== false;
 }
 
