@@ -90,7 +90,8 @@ echo json_encode([
     'success' => true,
     'key' => $new_key
 ]);
-exit; 
+exit;
+}
     
 
 if ($action === 'api_update' && $_SERVER['REQUEST_METHOD'] === 'POST') {
