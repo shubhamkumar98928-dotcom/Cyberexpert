@@ -1,7 +1,7 @@
 <?php
 // ------------------------------------------------------------
 // Number Info API - Landing Page
-// Nexxon Exploits Edition
+// Shubham Hacker Edition
 // ------------------------------------------------------------
 ?>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#05070f">
-    <title>Number Info API · Nexxon Exploits</title>
+    <title>Number Info API · Shubham Hacker</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -761,7 +761,7 @@
                     <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
                 </div>
                 <div class="brand-text">
-                    <h1>NEXXON EXPLOITS</h1>
+                    <h1>SHUBHAM HACKER</h1>
                     <p>Number Intelligence</p>
                 </div>
             </a>
@@ -781,7 +781,7 @@
             </div>
             <h1>The API that runs<br><span class="grad">your intelligence.</span></h1>
             <p class="hero-sub">Query. Reveal. Verify.</p>
-            <p class="hero-desc">Nexxon Exploits turns a single phone number into a rich, actionable identity — name, address, telecom circle, alternate numbers, and more. Built for investigators, security teams, and analysts.</p>
+            <p class="hero-desc">Shubham Hacker turns a single phone number into a rich, actionable identity — name, address, telecom circle, alternate numbers, and more. Built for investigators, security teams, and analysts.</p>
 
             <div class="cta-row">
                 <a href="#test" class="btn-hero primary">
@@ -816,10 +816,10 @@
                 <div class="terminal-dot dot-red"></div>
                 <div class="terminal-dot dot-yellow"></div>
                 <div class="terminal-dot dot-green"></div>
-                <span class="terminal-title">nexxon · api · v1</span>
+                <span class="terminal-title">shubham · api · v1</span>
             </div>
             <div class="terminal-body">
-                <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">curl "https://api.nexxon.dev/num?num=8800952843&key=YOUR_KEY"</span></div>
+                <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">curl "https://api.shubham.dev/num?num=8800952843&key=YOUR_KEY"</span></div>
                 <div class="term-line"><span class="term-resp">→ status: 200 OK</span></div>
                 <div class="term-line">{</div>
                 <div class="term-line">&nbsp;&nbsp;<span class="term-key">"success"</span>: <span class="term-resp">true</span>,</div>
@@ -946,7 +946,7 @@
         <div class="section-head" id="docs">
             <span class="section-tag">API Reference</span>
             <h2 class="section-title">Documentation</h2>
-            <p class="section-desc">Everything you need to integrate the Nexxon Number Info API.</p>
+            <p class="section-desc">Everything you need to integrate the Shubham Number Info API.</p>
         </div>
 
         <div class="docs">
@@ -1013,8 +1013,8 @@
   },
   "checked_at": "2026-09-26 10:30:45 UTC",
   "api_info": {
-    "developed_by": "Creator Shyamchand & Ayan - CEO & Founder Of - Nexxon Exploits",
-    "organization": "Nexxon Exploits",
+    "developed_by": "Creator Shyamchand & Ayan - CEO & Founder Of - Shubham Hacker",
+    "organization": "Shubham Hackers",
     "purpose": "For Educational Purposes Only"
   }
 }</div>
@@ -1055,9 +1055,9 @@
     <footer class="footer">
         <div class="footer-credit">
             <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
-            <span>Nexxon Exploits</span>
+            <span>Shubham Hacker</span>
         </div>
-        <p>Creator Shyamchand & Ayan · CEO & Founder Of Nexxon Exploits</p>
+        <p>Creator Shyamchand & Ayan · CEO & Founder Of Shubham Hacker</p>
         <p style="margin-top: 8px;">For Educational Purposes Only · © <?php echo date('Y'); ?></p>
     </footer>
 
