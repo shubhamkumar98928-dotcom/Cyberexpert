@@ -146,7 +146,7 @@ function renderLoginPage($error) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#0a0e1a">
-    <title>Admin · Nexxon</title>
+    <title>Admin · Shubham</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -333,7 +333,7 @@ function renderLoginPage($error) {
                 <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
             </div>
             <h1 class="login-title">Admin Access</h1>
-            <p class="login-sub">Nexxon Exploits · Secure Gateway</p>
+            <p class="login-sub">Shubham Hacker · Secure Gateway</p>
         </div>
 
         <?php if ($error): ?>
@@ -374,7 +374,7 @@ function renderAdminPage($page) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#05070f">
-    <title>Nexxon Admin</title>
+    <title>Shubham Admin</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -1257,7 +1257,7 @@ function renderAdminPage($page) {
                         <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
                     </div>
                     <div class="brand-text">
-                        <h1>NEXXON</h1>
+                        <h1>SHUBHAM</h1>
                         <p>Admin Panel</p>
                     </div>
                 </div>
