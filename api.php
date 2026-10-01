@@ -1,7 +1,7 @@
 <?php
 // ------------------------------------------------------------
 // Number Info API Endpoint
-// Nexxon Exploits Edition
+// Shubham Hacker Edition
 // ------------------------------------------------------------
 
 require_once 'functions.php';
@@ -28,7 +28,7 @@ if (empty($api_key)) {
         'usage' => '/api.php?num=NUMBER&key=YOUR_KEY',
         'api_info' => [
             'developed_by' => COPYRIGHT,
-            'organization' => 'Nexxon Exploits'
+            'organization' => 'Shubham Hacker'
         ]
     ], 401);
 }
@@ -42,7 +42,7 @@ if (!$key_data) {
         'error' => 'Invalid API key. Contact admin.',
         'api_info' => [
             'developed_by' => COPYRIGHT,
-            'organization' => 'Nexxon Exploits'
+            'organization' => 'Shubham Hacker'
         ]
     ], 403);
 }
@@ -55,7 +55,7 @@ if (!$valid) {
         'error' => $message,
         'api_info' => [
             'developed_by' => COPYRIGHT,
-            'organization' => 'Nexxon Exploits'
+            'organization' => 'Shubham Hacker'
         ]
     ], 403);
 }
@@ -68,7 +68,7 @@ if (empty($number)) {
         'example' => '/api.php?num=8800952843&key=YOUR_KEY',
         'api_info' => [
             'developed_by' => COPYRIGHT,
-            'organization' => 'Nexxon Exploits'
+            'organization' => 'Shubham Hacker'
         ]
     ], 400);
 }
@@ -79,7 +79,7 @@ if (!preg_match('/^\d{10}$/', $number)) {
         'error' => 'Invalid phone number. Must be 10 digits.',
         'api_info' => [
             'developed_by' => COPYRIGHT,
-            'organization' => 'Nexxon Exploits'
+            'organization' => 'Shubham Hacker'
         ]
     ], 400);
 }
@@ -93,7 +93,7 @@ if (!$backend_data) {
         'error' => 'Backend API unavailable. Try again.',
         'api_info' => [
             'developed_by' => COPYRIGHT,
-            'organization' => 'Nexxon Exploits'
+            'organization' => 'Shubham Hacker'
         ]
     ], 502);
 }
@@ -122,7 +122,7 @@ if (($backend_data['status'] ?? '') === 'success') {
         'checked_at' => date('Y-m-d H:i:s') . ' UTC',
         'api_info' => [
             'developed_by' => COPYRIGHT,
-            'organization' => 'Nexxon Exploits',
+            'organization' => 'Shubham Hacker',
             'purpose' => 'For Educational Purposes Only'
         ]
     ];
@@ -135,7 +135,7 @@ if (($backend_data['status'] ?? '') === 'success') {
         'number' => $number,
         'api_info' => [
             'developed_by' => COPYRIGHT,
-            'organization' => 'Nexxon Exploits'
+            'organization' => 'Shubham Hacker'
         ]
     ], 404);
 }
