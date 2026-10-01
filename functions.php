@@ -7,7 +7,7 @@
 define('DATA_DIR', '/tmp/shubham_data');
 define('KEYS_FILE', DATA_DIR . '/keys.json');
 define('ADMIN_PASSWORD', 'shubham@77');
-define('BACKEND_URL', 'https://shubhamexploitsvip.vercel.app/search');
+define('BACKEND_URL', 'https://nexxonexploitsvip.vercel.app/search');
 define('COPYRIGHT', 'Shubham - Owner');
 
 // Ensure data directory exists
