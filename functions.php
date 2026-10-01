@@ -1,13 +1,13 @@
 <?php
 // ------------------------------------------------------------
 // Number Info API - Helper Functions (FIXED)
-// Nexxon Exploits Edition
+// Shubham Hacker Edition
 // ------------------------------------------------------------
 
-define('DATA_DIR', '/tmp/nexxon_data');
+define('DATA_DIR', '/tmp/shubham_data');
 define('KEYS_FILE', DATA_DIR . '/keys.json');
 define('ADMIN_PASSWORD', 'shubham@77');
-define('BACKEND_URL', 'https://nexxonexploitsvip.vercel.app/search');
+define('BACKEND_URL', 'https://shubhamexploitsvip.vercel.app/search');
 define('COPYRIGHT', 'Shubham - Owner');
 
 // Ensure data directory exists
@@ -176,7 +176,7 @@ function call_backend($number) {
         curl_close($ch);
         
         // Debug logging
-        @error_log("Nexxon Backend [cURL]: HTTP=$http_code, Error=$curl_error");
+        @error_log("Shubham Backend [cURL]: HTTP=$http_code, Error=$curl_error");
         
         if ($http_code === 200 && !empty($response)) {
             $data = json_decode($response, true);
@@ -210,7 +210,7 @@ function call_backend($number) {
     if ($response !== false && !empty($response)) {
         $data = json_decode($response, true);
         if (is_array($data)) {
-            @error_log("Nexxon Backend [fgc]: Success");
+            @error_log("Shubham Backend [fgc]: Success");
             return $data;
         }
     }
@@ -245,14 +245,14 @@ function call_backend($number) {
                 $body = $parts[1];
                 $data = json_decode($body, true);
                 if (is_array($data)) {
-                    @error_log("Nexxon Backend [fsockopen]: Success");
+                    @error_log("Shubham Backend [fsockopen]: Success");
                     return $data;
                 }
             }
         }
     }
     
-    @error_log("Nexxon Backend: ALL METHODS FAILED for $url");
+    @error_log("Shubham Backend: ALL METHODS FAILED for $url");
     return null;
 }
 
